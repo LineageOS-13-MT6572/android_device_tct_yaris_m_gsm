@@ -115,6 +115,9 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
+# Hack for build
+$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+
 BOARD_SEPOLICY_DIRS := \
        device/tct/yaris_m_gsm/sepolicy
 
